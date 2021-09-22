@@ -29,17 +29,18 @@ body {
     background-color: rgb(0, 255, 247);
     display: flex;
     align-items: center;
-    font-size: 24px;
+    font-size: 28px;
 }
 
 .header-text {
+    font-family: cursive;
+    font-style: oblique;
     margin-left: 5%;
 }
 
 .container {
     grid-area: container;
     display: grid;
-    max-height: 60vh;
     grid-template-columns: 20% 5% 20% 5% 50%;
     grid-template-areas: 'menu left-space center right-space right';
 }
@@ -56,7 +57,7 @@ body {
 .menu ul {
     list-style-type: none;
     padding: 0;
-    font-size: 20px;
+    font-size: 24px;
 }
 
 .menu ul li {
@@ -64,7 +65,7 @@ body {
     border: 1px solid rgb(0, 255, 0);
     color: rgb(0, 255, 0);
     width: 120px;
-    margin: 15px 0;
+    margin: 10% 0;
     border-radius: 8px;
     text-align: center;
 }
@@ -98,9 +99,6 @@ body {
     grid-area: center;
     display: flex;
     max-height: 60vh;
-
-    /* width: 20%;
-    height: 100%; */
     background-color: rgb(0, 255, 0);
     padding: 20px;
     font-size: 20px;
@@ -115,16 +113,10 @@ body {
     grid-template-areas:
         'up-info up-info up-info'
         'left-article space right-article';
-
-    /* width: 50%;
-    height: 100%; */
 }
 
 .up-info {
     grid-area: up-info;
-
-    /* max-width: 100%;
-    height: 15%; */
     background-color: rgb(240, 255, 64);
     padding: 20px;
     font-size: 16px;
@@ -132,9 +124,6 @@ body {
 
 .left-article {
     grid-area: left-article;
-
-    /* width: 44%;
-    max-height: 100%; */
     padding: 20px;
     font-size: 20px;
     background-color: rgb(12, 128, 31);
@@ -149,10 +138,6 @@ body {
 
 .right-article {
     grid-area: right-article;
-    background-color: rgb(224, 42, 42);
-
-    /* width: 44%;
-    height: 100%; */
 }
 
 .image {
@@ -163,9 +148,6 @@ body {
 
 .footer {
     grid-area: footer;
-
-    /* width: 100vw;
-    height: 20vh; */
     display: flex;
     background-color: rgb(180, 35, 240);
     align-items: center;
@@ -174,5 +156,6 @@ body {
 }
 
 .footer-text {
+    font-size: 28px;
     margin-right: 5%;
 }
