@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    display: grid;
+}
+
+.header {
+    width: 100vw;
+    height: 20vh;
+    background-color: rgb(0, 255, 247);
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+}
+
+.header-text {
+    margin-left: 5%;
+}
+
+.header-text::selection {
+    background-color: rgba(255, 0, 8, 0.35);
+}
+
+.container {
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu {
+    width: 20%;
+    height: 100%;
+    background-color: rgb(255, 0, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: sidebar;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 24px;
+}
+
+.menu ul li {
+    padding: 10px;
+    border: 1px solid rgb(0, 255, 0);
+    color: rgb(0, 255, 0);
+    width: 150px;
+    margin: 10px 0;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.menu ul li:hover {
+    background: rgb(0, 255, 0);
+    color: rgb(255, 0, 255);
+    transition: all 0.6s ease;
+}
+
+.menu ul li a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.center-info {
+    width: 20%;
+    height: 100%;
+    background-color: rgb(0, 255, 0);
+    padding: 20px;
+    font-size: 20px;
+}
+
+.right-info {
+    width: 50%;
+    height: 100%;
+}
+
+.up-info {
+    max-width: 100%;
+    height: 15%;
+    background-color: rgb(240, 255, 64);
+    padding: 20px;
+    font-size: 16px;
+}
+
+.images {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-article {
+    width: 44%;
+    max-height: 100%;
+    padding: 20px;
+    font-size: 20px;
+    background-color: rgb(12, 128, 31);
+}
+
+.right-article {
+    width: 44%;
+    height: 100%;
+}
+
+.image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.footer {
+    width: 100vw;
+    height: 20vh;
+    display: flex;
+    background-color: rgb(180, 35, 240);
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 24px;
+}
+
+.footer-text {
+    margin-right: 5%;
+}
