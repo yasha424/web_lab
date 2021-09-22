@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yasha424/web_labs_test.git"
+    "url": "git+https://github.com/yasha424/web_lab.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/yasha424/web_labs_test/issues"
+    "url": "https://github.com/yasha424/web_lab/issues"
   },
-  "homepage": "https://github.com/yasha424/web_labs_test#readme",
+  "homepage": "https://github.com/yasha424/web_lab#readme",
   "devDependencies": {
     "eslint": "^7.32.0",
     "eslint-config-standard": "^16.0.3",
