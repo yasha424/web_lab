@@ -3,8 +3,12 @@
         "browser": true,
         "es2021": true
     },
+    "plugins": [
+        "sonarjs"
+    ],
     "extends": [
-        "standard"
+        "standard",
+        "plugin:sonarjs/recommended"
     ],
     "parserOptions": {
         "ecmaVersion": 12
