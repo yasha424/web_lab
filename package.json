@@ -6,8 +6,12 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky install",
-    "format": "prettier -w .",
-    "style": "stylelint \"**/*.css\""
+    "prettier": "prettier -c .",
+    "prettier-fix": "prettier -w .",
+    "stylelint": "stylelint \"**/*.css\"",
+    "stylelint-fix": "stylelint --fix \"**/*.css\"",
+    "eslint": "eslint .",
+    "eslint-fix": "eslint --fix ."
   },
   "repository": {
     "type": "git",

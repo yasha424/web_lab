@@ -1,33 +1,17 @@
-* {
-    padding: 0;
-    margin: 0;
-    border: 0;
-}
-
-html,
-body {
-    background-color: rgb(0, 160, 160);
-    width: 100%;
-    height: 100%;
-    font-size: 100%;
-    line-height: 1;
-    -ms-text-size-adjust: 100%;
-    -moz-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
-}
+@import url("./variables.css");
 
 body {
+    background-color: var(--background-color);
     display: grid;
-    grid-template-rows: 20% 60% 20%;
-    grid-template-areas:
-        'header'
-        'container'
-        'footer';
+    grid-template-rows: 10% 20% 60% 10%;
+    grid-template-columns: 20% 5% 20% 5% 20% 5% 25%;
+    grid-template-areas: var(--grid-template);
 }
 
 .header {
     grid-area: header;
-    background-color: rgb(0, 255, 247);
+    background-color: var(--header-color);
+    color: var(--light-text);
     display: flex;
     align-items: center;
     font-size: 28px;
@@ -39,140 +23,110 @@ body {
     margin-left: 5%;
 }
 
-.container {
-    grid-area: container;
-    display: grid;
-    grid-template-columns: 20% 5% 20% 5% 50%;
-    grid-template-areas: 'menu left-space center right-space right';
-}
-
 .menu {
     grid-area: menu;
-    background-color: rgb(255, 0, 255);
     display: flex;
-    max-height: 60vh;
+    background-color: var(--menu-color);
     align-items: center;
     justify-content: center;
-    overflow: scroll;
+    overflow: hidden;
 }
 
-.menu ul {
+ul {
     list-style-type: none;
     padding: 0;
     font-size: 24px;
 }
 
-.menu ul li {
+li {
     padding: 10px;
-    border: 1px solid rgb(0, 255, 0);
-    color: rgb(0, 255, 0);
-    width: 120px;
+    display: block;
+    border: 1px solid var(--menu-text);
+    color: var(--menu-text);
     margin: 10% 0;
     border-radius: 8px;
     text-align: center;
+    cursor: pointer;
 }
 
-.menu ul li a {
+li > a {
     color: inherit;
     text-decoration: none;
 }
 
-.menu ol {
+ol {
     list-style-type: none;
     padding: 0;
     font-size: 24px;
 }
 
-.menu ol li {
-    padding: 10px;
-    border: 1px solid rgb(0, 255, 0);
-    color: rgb(0, 255, 0);
-    width: 120px;
-    margin: 10% 0;
-    border-radius: 8px;
-    text-align: center;
-}
-
-.menu ul li:hover {
-    background: rgb(0, 255, 0);
-    color: rgb(255, 0, 255);
+li:hover {
+    background: var(--menu-text);
+    color: var(--light-text);
     transition: all 0.6s ease;
 }
 
-.menu ol li:hover {
-    background: rgb(0, 255, 0);
-    color: rgb(255, 0, 255);
-    transition: all 0.6s ease;
+.active {
+    background-color: var(--menu-text);
+    color: var(--light-text);
+    cursor: default;
 }
 
-.menu ol li a {
-    color: inherit;
-    text-decoration: none;
+.active > a {
+    cursor: default;
 }
 
 .left-space {
     grid-area: left-space;
-    max-width: 5vw;
-    background-color: rgb(255, 255, 255);
     display: flex;
+    background-color: var(--space-color);
 }
 
 .right-space {
     grid-area: right-space;
-    max-width: 5vw;
-    background-color: rgb(255, 255, 255);
     display: flex;
+    background-color: var(--space-color);
 }
 
 .center-info {
     grid-area: center;
     display: flex;
-    max-height: 60vh;
-    background-color: rgb(0, 255, 0);
+    background-color: var(--center-info-color);
+    color: var(--light-text);
     padding: 10px;
     font-size: 20px;
-    overflow: scroll;
-}
-
-.right-info {
-    grid-area: right;
-    display: grid;
-    max-height: 60vh;
-    grid-template-rows: 20% 80%;
-    grid-template-columns: 45% 10% 45%;
-    grid-template-areas:
-        'up-info up-info up-info'
-        'left-article space right-article';
+    overflow: hidden;
 }
 
 .up-info {
     grid-area: up-info;
-    background-color: rgb(240, 255, 64);
+    display: flex;
+    background-color: var(--up-info-color);
+    color: var(--light-text);
     padding: 10px;
     font-size: 20px;
-    overflow: scroll;
+    overflow: hidden;
 }
 
 .left-article {
     grid-area: left-article;
+    display: flex;
+    background-color: var(--left-article-color);
+    color: var(--light-text);
     padding: 10px;
     font-size: 20px;
-    background-color: rgb(12, 128, 31);
-    overflow: scroll;
+    overflow: hidden;
 }
 
 .space {
     grid-area: space;
-    max-width: 5vw;
-    background-color: rgb(255, 255, 255);
     display: flex;
-}
-
-.right-article {
-    grid-area: right-article;
+    background-color: var(--space-color);
 }
 
 .image {
+    grid-area: right-article;
+    display: flex;
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -181,12 +135,13 @@ body {
 .footer {
     grid-area: footer;
     display: flex;
-    background-color: rgb(180, 35, 240);
+    background-color: var(--footer-color);
     align-items: center;
     justify-content: flex-end;
 }
 
 .footer-text {
     font-size: 28px;
+    font-family: monospace;
     margin-right: 5%;
 }

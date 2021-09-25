@@ -1,6 +1,6 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-npm run format
-npm run style
-git add .
+npm run eslint-fix
+npm run stylelint-fix
+npm run prettier-fix
