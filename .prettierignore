@@ -6,3 +6,4 @@ package.json
 package-*.json
 .*
 *.css
+*.js
