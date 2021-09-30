@@ -1,14 +1,17 @@
 :root {
-    --background-color: #107101;
+    --background-color: #999;
     --header-color: #1613aa;
     --menu-color: #ac06ac;
     --menu-text: #00d600;
     --light-text: #fff;
-    --space-color: #e8e8e8;
+    --black-text: #000;
+    --space-color: #fff;
     --center-info-color: #32c48b;
-    --up-info-color: #b8a859;
+    --up-info-color: #948133;
     --left-article-color: #053c00;
     --footer-color: #7301a2;
+    --grid-rows: 10% 20% 60% 10%;
+    --grid-columns: 20% 5% 20% 5% 20% 5% 25%;
     --grid-template:
         'header header header header header header header'
         'menu left-space center right-space up-info up-info up-info'
