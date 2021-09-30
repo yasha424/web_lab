@@ -52,6 +52,12 @@ body {
     /* cursor: pointer; */
 }
 
+.footer-text > a {
+    color: var(--black-text);
+    text-decoration: none;
+    cursor: default;
+}
+
 .menu li > a {
     color: inherit;
     text-decoration: none;
@@ -166,10 +172,4 @@ body {
     font-size: 28px;
     font-family: 'Klee One', cursive;
     margin-right: 5%;
-}
-
-.footer-text a {
-    color: var(--black-text);
-    text-decoration: none;
-    cursor: default;
 }
