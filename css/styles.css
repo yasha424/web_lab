@@ -30,6 +30,7 @@ body {
     justify-content: center;
     overflow: hidden;
     float: right;
+    min-height: 80vh;
     padding: 30px 10px;
 }
 
@@ -104,7 +105,6 @@ body {
     display: flex;
     background-color: var(--space-color);
     min-width: 2vw;
-    height: 80vh;
 }
 
 .center-info {
@@ -156,6 +156,7 @@ body {
     display: flex;
     height: 100%;
     width: 100%;
+    max-width: 20vw;
     object-fit: cover;
 }
 
