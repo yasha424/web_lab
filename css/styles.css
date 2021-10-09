@@ -49,10 +49,17 @@ body {
     text-align: center;
 }
 
-.footer-text > a {
+.footer a {
     color: var(--black-text);
     text-decoration: none;
-    cursor: default;
+    cursor: inherit;
+    border: none !important;
+}
+
+.footer abbr[title] {
+    border: none !important;
+    cursor: inherit !important;
+    text-decoration: none !important;
 }
 
 .menu ol {
@@ -142,7 +149,7 @@ body {
     justify-content: flex-end;
 }
 
-.footer-text {
+.footer p {
     font-size: var(--footer-font-size);
     font-family: 'Klee One', cursive;
     margin-right: 5%;
