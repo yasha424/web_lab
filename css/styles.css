@@ -16,7 +16,7 @@ body {
     font-size: var(--header-font-size);
 }
 
-.header-text {
+.header p {
     font-family: cursive;
     font-style: oblique;
     margin-left: 5%;
@@ -28,7 +28,6 @@ body {
     background-color: var(--menu-color);
     align-items: center;
     justify-content: center;
-    overflow: hidden;
     float: right;
     min-height: var(--menu-min-hight);
     padding: 30px 10px;
@@ -88,7 +87,6 @@ body {
     color: var(--light-text);
     padding: 10px;
     font-size: var(--info-font-size);
-    overflow: hidden;
 }
 
 .right-space {
@@ -105,7 +103,8 @@ body {
     color: var(--light-text);
     padding: 10px;
     font-size: var(--info-font-size);
-    overflow: hidden;
+
+    /* overflow: hidden; */
 }
 
 .left-article {
@@ -115,7 +114,8 @@ body {
     color: var(--light-text);
     padding: 10px;
     font-size: var(--info-font-size);
-    overflow: hidden;
+
+    /* overflow: hidden; */
 }
 
 .space {
