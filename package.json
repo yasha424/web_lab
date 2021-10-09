@@ -6,10 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky install",
-    "prettier": "prettier -c .",
-    "prettier-fix": "prettier -w .",
-    "stylelint": "stylelint \"**/*.css\"",
-    "stylelint-fix": "stylelint --fix \"**/*.css\"",
+    "prettier": "prettier --ignore-pattern .gitignore -c .",
+    "prettier-fix": "prettier --ignore-pattern .gitignore -w .",
+    "stylelint": "stylelint --ignore-pattern .gitignore \"**/*.css\"",
+    "stylelint-fix": "stylelint --fix --ignore-pattern .gitignore \"**/*.css\"",
     "eslint": "eslint --ignore-pattern .gitignore \"js/**/*.js\"",
     "eslint-fix": "eslint --fix --ignore-pattern .gitignore \"js/**/*.js\""
   },
