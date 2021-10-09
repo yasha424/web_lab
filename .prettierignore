@@ -4,6 +4,5 @@ coverage
 node_modules
 package.json
 package-*.json
-.*
 *.css
 *.js
