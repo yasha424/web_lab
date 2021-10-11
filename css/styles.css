@@ -49,19 +49,6 @@ body {
     text-align: center;
 }
 
-.footer a {
-    color: var(--black-text);
-    text-decoration: none;
-    cursor: inherit;
-    border: none !important;
-}
-
-.footer abbr[title] {
-    border: none !important;
-    cursor: inherit !important;
-    text-decoration: none !important;
-}
-
 .menu ol {
     list-style-type: none;
     padding: 0;
@@ -110,8 +97,6 @@ body {
     color: var(--light-text);
     padding: 10px;
     font-size: var(--info-font-size);
-
-    /* overflow: hidden; */
 }
 
 .left-article {
@@ -121,8 +106,6 @@ body {
     color: var(--light-text);
     padding: 10px;
     font-size: var(--info-font-size);
-
-    /* overflow: hidden; */
 }
 
 .space {
@@ -153,4 +136,14 @@ body {
     font-size: var(--footer-font-size);
     font-family: 'Klee One', cursive;
     margin-right: 5%;
+}
+
+.footer a {
+    color: var(--black-text);
+    text-decoration: none;
+    cursor: inherit;
+}
+
+.footer abbr {
+    text-decoration: inherit;
 }

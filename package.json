@@ -1,38 +1,38 @@
 {
-  "name": "web_labs_test",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "husky install",
-    "prettier": "prettier --ignore-path .gitignore --ignore-path .prettierignore -c .",
-    "prettier-fix": "prettier --ignore-path .gitignore --ignore-path .prettierignore -w .",
-    "stylelint": "stylelint --ignore-pattern .gitignore \"**/*.css\"",
-    "stylelint-fix": "stylelint --fix --ignore-pattern .gitignore \"**/*.css\"",
-    "eslint": "eslint --ignore-pattern .gitignore \"js/**/*.js\"",
-    "eslint-fix": "eslint --fix --ignore-pattern .gitignore \"js/**/*.js\""
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/yasha424/web_lab.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/yasha424/web_lab/issues"
-  },
-  "homepage": "https://github.com/yasha424/web_lab#readme",
-  "devDependencies": {
-    "eslint": "^7.32.0",
-    "eslint-config-standard": "^16.0.3",
-    "eslint-plugin-import": "^2.24.2",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^5.1.0",
-    "eslint-plugin-sonarjs": "^0.10.0",
-    "husky": "^7.0.0",
-    "prettier": "^2.4.1",
-    "stylelint": "^13.13.1",
-    "stylelint-config-standard": "^22.0.0"
-  }
+    "name": "web_labs_test",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "prepare": "husky install",
+        "prettier": "prettier --ignore-path .gitignore -c .",
+        "prettier-fix": "prettier --ignore-path .gitignore -w .",
+        "stylelint": "stylelint --ignore-pattern .gitignore \"**/*.css\"",
+        "stylelint-fix": "stylelint --fix --ignore-pattern .gitignore \"**/*.css\"",
+        "eslint": "eslint --ignore-pattern .gitignore \"js/**/*.js\"",
+        "eslint-fix": "eslint --fix --ignore-pattern .gitignore \"js/**/*.js\""
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/yasha424/web_lab.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/yasha424/web_lab/issues"
+    },
+    "homepage": "https://github.com/yasha424/web_lab#readme",
+    "devDependencies": {
+        "eslint": "^7.32.0",
+        "eslint-config-standard": "^16.0.3",
+        "eslint-plugin-import": "^2.24.2",
+        "eslint-plugin-node": "^11.1.0",
+        "eslint-plugin-promise": "^5.1.0",
+        "eslint-plugin-sonarjs": "^0.10.0",
+        "husky": "^7.0.0",
+        "prettier": "^2.4.1",
+        "stylelint": "^13.13.1",
+        "stylelint-config-standard": "^22.0.0"
+    }
 }
