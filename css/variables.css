@@ -1,0 +1,22 @@
+:root {
+    --background-color: #999;
+    --header-color: #1613aa;
+    --menu-color: #ac06ac;
+    --menu-text: #00d600;
+    --light-text: #fff;
+    --black-text: #000;
+    --space-color: #fff;
+    --center-info-color: #12734d;
+    --up-info-color: #7e6d10;
+    --left-article-color: #053c00;
+    --footer-color: #7301a2;
+    --menu-hover-transition: all 0.6s ease;
+    --space-min-width: 2vw;
+    --header-font-size: 28px;
+    --footer-font-size: 28px;
+    --header-min-hight: 10vh;
+    --footer-min-hight: 10vh;
+    --menu-min-hight: 80vh;
+    --menu-font-size: 24px;
+    --info-font-size: 20px;
+}

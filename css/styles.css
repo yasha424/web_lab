@@ -1,0 +1,149 @@
+@import url('/css/variables.css');
+@import url('https://fonts.googleapis.com/css2?family=Klee+One:wght@600&display=swap');
+
+body {
+    background-color: var(--background-color);
+    display: grid;
+}
+
+.header {
+    grid-area: 1 / 1 / 2 / 8;
+    display: flex;
+    background-color: var(--header-color);
+    color: var(--light-text);
+    align-items: center;
+    min-height: var(--header-min-hight);
+    font-size: var(--header-font-size);
+}
+
+.header p {
+    font-family: cursive;
+    font-style: oblique;
+    margin-left: 5%;
+}
+
+.menu {
+    grid-area: 2 / 1 / 4 / 2;
+    display: flex;
+    background-color: var(--menu-color);
+    align-items: center;
+    justify-content: center;
+    float: right;
+    min-height: var(--menu-min-hight);
+    padding: 30px 10px;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: var(--menu-font-size);
+}
+
+.menu li {
+    padding: 10px;
+    display: block;
+    border: 1px solid var(--menu-text);
+    color: var(--menu-text);
+    margin: 10px 0;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.menu ol {
+    list-style-type: none;
+    padding: 0;
+    font-size: var(--menu-font-size);
+}
+
+.menu li:hover {
+    background: var(--menu-text);
+    color: var(--light-text);
+    transition: var(--menu-hover-transition);
+}
+
+.menu .active {
+    background-color: var(--menu-text);
+    color: var(--light-text);
+    cursor: default;
+}
+
+.left-space {
+    grid-area: 2 / 2 / 4 / 3;
+    display: flex;
+    background-color: var(--space-color);
+    min-width: var(--space-min-width);
+}
+
+.center-info {
+    grid-area: 2 / 3 / 4 / 4;
+    display: flex;
+    background-color: var(--center-info-color);
+    color: var(--light-text);
+    padding: 10px;
+    font-size: var(--info-font-size);
+}
+
+.right-space {
+    grid-area: 2 / 4 / 4 / 5;
+    display: flex;
+    background-color: var(--space-color);
+    min-width: var(--space-min-width);
+}
+
+.up-info {
+    grid-area: 2 / 5 / 3 / 8;
+    display: flex;
+    background-color: var(--up-info-color);
+    color: var(--light-text);
+    padding: 10px;
+    font-size: var(--info-font-size);
+}
+
+.left-article {
+    grid-area: 3 / 5 / 4 / 6;
+    display: flex;
+    background-color: var(--left-article-color);
+    color: var(--light-text);
+    padding: 10px;
+    font-size: var(--info-font-size);
+}
+
+.space {
+    grid-area: 3 / 6 / 4 / 7;
+    display: flex;
+    background-color: var(--space-color);
+    min-width: var(--space-min-width);
+}
+
+.image {
+    grid-area: 3 / 7 / 4 / 8;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.footer {
+    grid-area: 4 / 1 / 5 / 8;
+    display: flex;
+    background-color: var(--footer-color);
+    align-items: center;
+    min-height: var(--footer-min-hight);
+    justify-content: flex-end;
+}
+
+.footer p {
+    font-size: var(--footer-font-size);
+    font-family: 'Klee One', cursive;
+    margin-right: 5%;
+}
+
+.footer a {
+    color: var(--black-text);
+    text-decoration: none;
+    cursor: inherit;
+}
+
+.footer abbr {
+    text-decoration: inherit;
+}
